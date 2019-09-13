@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Calculation of Body MassIndex (BMI)</h2>
+
+    <button onclick="calculIMC()">
+        Try this
+    </button>
+
+    <script>
+
+        function calculIMC() {
+            var weight1 = parseInt(prompt("your weight in kg"));
+            var height1 = parseInt(prompt("your height in meters"));
+            var BMI = parseFloat(weight1 / (height1^2)) //square in JS is **2 !!
+            console.log(BMI);
+            var BMI2 = BMI.toFixed(2); //to adjust number to 2 decimals
+            console.log(BMI2);
+            alert("Your Body Mass Index is " + BMI2);
+
+
+            if (BMI2 < 16.5) {
+                alert("dénutrition ou famine");
+            } else if  (BMI2 >= 16.5 && BMI2 <18.5) {
+                 alert("maigreur");
+            } else if  (BMI2 >= 18.5 && BMI2 < 25) { 
+                alert("corpulence normale");
+            } else if (BMI2 >= 25 && BMI2 < 30) {
+                alert("surpoids");
+            } else if (BMI2 >= 30 && BMI2 < 35) {
+                alert("obésité modérée")
+            } else if (BMI2 >= 35 && BMI2 < 40) {
+                alert("obésité sévère");
+            } else if (BMI2 >= 40) {
+                alert("obésité morbide");
+          }
+        }
+
+    </script>
+
+</body>
+
+</html>

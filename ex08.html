@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch and Date Objects</title>
+</head>
+
+<body>
+    <h2>Switch and Date Objects</h2>
+
+    <button type="button" onclick="jourDeLaSemaine()">
+        Today is which day?
+    </button>
+
+    <script>
+        function jourDeLaSemaine() {
+            var day;
+            switch (new Date().getDay()) {
+                case 1:
+                    day = "Monday"
+                    break;
+                case 2:
+                    day = "Tuesday"
+                    break;
+                case 3:
+                    day = "Wednesday"
+                    break;
+                case 4:
+                    day = "Thursday"
+                    break;
+                case 5:
+                    day = "Friday"
+                    break;
+                case 6:
+                    day = "Saturday"
+                    break;
+                case 7:
+                    day = "Sunday"
+                    break;
+            }
+            alert("Today is " + day);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

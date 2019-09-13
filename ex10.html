@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>for loop</title>
+</head>
+
+<body>
+
+    <h2>for loop</h2>
+
+    <!-- 
+
+        for (let i = 1; i <= 10; i++) {
+        console.log(i);
+
+    } -->
+
+
+    <button type="button" onclick="faireSomme()">
+        Try it
+    </button>
+
+    <script>
+
+        var total = 0;
+
+        function faireSomme() {
+            for (var i = 0; i < 3; i++) {
+                var number = parseInt(prompt("Enter a number"));
+                total = total + number;
+            }
+            alert(total);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

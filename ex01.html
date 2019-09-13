@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex1</title>
+</head>
+<body>
+    
+<h2>JS Functions</h2>
+
+<!-- S -->
+
+    <button type="button" onclick="document.getElementById('surface').innerHTML = surfaceRectagle(width,height)">
+        Calculate the surface of a rectangle
+    </button>
+    
+    <p id="surface"> </p>
+
+<!-- P -->
+<button type="button" onclick="document.getElementById('perimeter').innerHTML = perimeterRectangle(width,height)">
+    Calculate the surface of a rectangle
+</button>
+
+<p id="perimeter"> </p>
+
+
+
+<script>
+    width=prompt("width?");
+    height=prompt("height?");
+
+    function surfaceRectagle(width,height) {
+        return width*height;
+    }
+
+    function perimeterRectangle(width,height) {
+        return 2*(width+height);
+    }
+
+    
+</script>
+
+</body>
+</html>

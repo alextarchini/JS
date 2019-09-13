@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch Statements</title>
+</head>
+
+<body>
+    <h2>Switch Statements</h2>
+
+    <button type="button" onclick="faireChoix()">
+        Make a choice
+    </button>
+
+
+    <script>
+        var choice = prompt("1, 2 or 3?");
+
+        function faireChoix() {
+                switch (choice) {
+                case "1":   //1 needs to be in quotes "1". otherwise does NOT work!!!
+                    choice = 1
+                    alert("Thank you");
+                    break;
+                case "2":
+                    choice = 2;
+                    alert("Hello");
+                    break;
+                case "3":
+                    choice = 3;
+                    alert("Goodbye");
+                    break;
+                default:
+                    alert("Sorry, what do you want?");
+            }
+    }
+
+    </script>
+
+
+
+</body>
+
+</html>

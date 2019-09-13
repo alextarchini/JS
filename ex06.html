@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="affiche()">
+        Show result here
+    </button>
+
+    <script>
+
+        tab = [-1, 1, 4];
+        var x;
+
+        function soustrait(x) {
+            if (x - 2 < 0) {
+                return "negative";
+            } else {
+                return "positive or 0";
+            }
+        }
+        console.log(soustrait(x));
+
+
+        function affiche() {
+            alert(soustrait(tab[0]));
+            alert(soustrait([tab.length - 1]));
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

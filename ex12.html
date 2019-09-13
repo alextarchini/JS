@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2> Conversion de température Celsius, Fahrenheit et Kelvin</h2>
+
+    <!-- menus are switches  -->
+
+    <button onclick="conversionTemperature()">
+        Try here
+    </button>
+
+    <script>
+        function conversionTemperature() {
+            var choice = prompt("which temp?:\n 0 = End of the program \n 1= Celsius to Fahrenheit \n 2= Celsius to Kelvin \n 3=Fahrenheit to Celsius \n 4=Fahrenheit to Kelvin \n 5=Kelvin to Celsius \n 6=Kelvin to Fahrenheit");
+            switch (choice) {
+                case "0":
+                    choice = 0
+                    alert("End of programme");
+                    break;
+                case "1":
+                    let val1 = prompt("Celsius to Fahrenheit. Enter a value");
+                    let result1 = ((val1 * 9 / 5) + 32);
+                    alert(result1 + "F");
+                    break;
+                case "2":
+                    let val2 = prompt("Celsius to Kelvin. Enter a value");
+                    let result2 = (val2 + 237.15);
+                    alert(result2 + "K");
+                case "3":
+                    let val3 = prompt("Fahrenheit to Celsius. Enter a value");
+                    let result3 = ((val3 -32))/(9/5);
+                    alert(result3 + "C");
+                case "4":
+                    let val4 = prompt("Fahrenheit to Kelvin. Enter a value");
+                    let result4 = ((val4 -32))*(5/9)+237.15;
+                    alert(result4 + "K");
+                case "5":
+                    let val5 = prompt("Kelvin to Celsius. Enter a value");
+                    let result5 = (val5 - 237.15);
+                    alert(result5 + "C");
+                case "6":
+                    let val6 = prompt("Kelvin to Fahrenheit. Enter a value");
+                    let result6 = (val6*9/5)-459.67;
+                    alert(result6 + "F");
+                default:
+                    text = "make a choice between 0 and 6";
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

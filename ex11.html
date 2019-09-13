@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Average with FOR Loop</h2>
+
+    <!-- Don't use FOR (not good if n is not declared!) -->
+
+    <button onclick="calculMoyenne()">
+        Try me
+    </button>
+
+    <script>
+
+        let average = 0;
+        let i = 0;
+        let tab = [];
+        let total = 0;
+        let output1 = parseInt(prompt("type an integer"));
+
+
+        function calculMoyenne() {
+
+            while (true) {
+                input1 = parseInt(prompt("type a number"));
+               /*  console.log(a) */
+
+                if (!Number.isInteger(input1)) {
+                    alert("not valid integer. Enter an integer");
+                    input = parseInt(prompt("type a number"));
+                  /*   console.log(a) */
+                } else if (input1 >= 0) {
+                    tab[i] = input1;
+                    i++;
+                    tab[i] = parseInt(prompt("type an integer number"));
+                    /* console.log(b) */
+                }
+                else {
+                    tab.forEach(function (tab) {
+                        average += tab;
+                     /*    console.log(c) */
+                    });
+
+                    return alert("the average is " + average / i + "and the number of elements is" + i)
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

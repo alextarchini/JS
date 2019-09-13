@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>while loop</title>
+</head>
+
+<body>
+
+    <h2>while loop</h2>
+
+    <button type="button" onclick="testWhile()">Click me</button>
+
+    <!-- A while loop is arguably more simpler than a for loop. 
+        A while loop just takes a single condition and evaluates it. 
+        If it evaluates to true, it will run again, 
+        otherwise if it evaluates to false it stops running. -->
+
+    <script>
+ 
+        function testWhile() {
+            var str = prompt("enter a word with p");
+
+            while (!str.includes("p")) {
+            alert("your word does NOT contain p, retry!")
+            str=prompt("enter a word with p");
+            }
+            alert(str);
+        }
+        /* alert(textWhile(str)); */
+
+
+
+
+
+/* 
+        function testWhile() {
+            var str =prompt("enter a word with p");
+            var n = str.includes("p");
+            while (n == str) {
+                prompt("Ok");
+            }
+            alert(str);
+        }
+        alert(texthile(str)); */
+
+    </script>
+
+</body>
+
+</html>
